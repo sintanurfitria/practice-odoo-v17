@@ -15,7 +15,7 @@ class PurchaseOrder(models.Model):
     purchase_order_supporting_document_line_ids = fields.One2many(
         "purchase.order.supporting.document",
         "order_id",
-        string="Purchase ORder SUpporting DOcument Line",
+        string="Purchase Order SUpporting DOcument Line",
     )
 
     def _prepare_supporting_document_vals(
