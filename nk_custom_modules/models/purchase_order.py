@@ -11,7 +11,7 @@ class PurchaseOrder(models.Model):
     purchase_type = fields.Selection(
         [("material", "Materi"), ("service", "Service")],
         index=True,
-        required=True,
+        # required=True,
     )
     purchase_order_supporting_document_line_ids = fields.One2many(
         "purchase.order.supporting.document",
